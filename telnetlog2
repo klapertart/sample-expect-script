@@ -1,0 +1,6 @@
+cd /home
+]0;root@localhost:/home[root@localhost home]# pwd
+/home
+]0;root@localhost:/home[root@localhost home]# ls
+test.txt
+]0;root@localhost:/home[root@localhost home]# 
