@@ -1,0 +1,14 @@
+spawn ssh rot@192.168.8.75
+rot@192.168.8.75's password: 
+Permission denied, please try again.
+rot@192.168.8.75's password: 
+Permission denied, please try again.
+rot@192.168.8.75's password: 
+rot@192.168.8.75: Permission denied (publickey,gssapi-keyex,gssapi-with-mic,password).
+spawn ssh root@192.168.8.75
+root@192.168.8.75's password: 
+Permission denied, please try again.
+root@192.168.8.75's password: 
+Permission denied, please try again.
+root@192.168.8.75's password: 
+root@192.168.8.75: Permission denied (publickey,gssapi-keyex,gssapi-with-mic,password).

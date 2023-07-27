@@ -2,9 +2,9 @@
 
 set timeout -1
 
-array set remote_array {
-	root@192.168.8.110 getpass
-	klapertart@192.168.8.97 getpass
+array set remote_array {	
+	root@192.168.8.75 getpass
+	klapertart@192.168.8.68 getpass
 }
 
 

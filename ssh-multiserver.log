@@ -40,4 +40,97 @@ Last login: Wed Jul 26 07:22:12 2023 from 192.168.8.58
 Last login: Wed Jul 26 13:28:38 2023
 ]0;root@localhost:~[?1034h[root@localhost ~]# pwd
 /root
-]0;root@localhost:~[root@localhost ~]# 
+]0;root@localhost:~[root@localhost ~]# spawn ssh klapertart@192.168.8.68
+The authenticity of host '192.168.8.68 (192.168.8.68)' can't be established.
+ED25519 key fingerprint is SHA256:M6zM4UYehgztdCeNIAvgE7ZA3XFLc6E2fn1od2RcyWQ.
+This host key is known by the following other names/addresses:
+    ~/.ssh/known_hosts:14: [hashed name]
+    ~/.ssh/known_hosts:16: [hashed name]
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added '192.168.8.68' (ED25519) to the list of known hosts.
+klapertart@192.168.8.68's password: 
+Welcome to Ubuntu 20.04.6 LTS (GNU/Linux 5.4.0-155-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+  System information as of Thu 27 Jul 2023 02:16:26 AM UTC
+
+  System load:  0.0                Processes:               111
+  Usage of /:   40.6% of 11.21GB   Users logged in:         1
+  Memory usage: 11%                IPv4 address for enp0s3: 192.168.8.68
+  Swap usage:   0%
+
+
+ * Introducing Expanded Security Maintenance for Applications.
+   Receive updates to over 25,000 software packages with your
+   Ubuntu Pro subscription. Free for personal use.
+
+     https://ubuntu.com/pro
+
+Expanded Security Maintenance for Applications is not enabled.
+
+39 updates can be applied immediately.
+To see these additional updates run: apt list --upgradable
+
+Enable ESM Apps to receive additional future security updates.
+See https://ubuntu.com/esm or run: sudo pro status
+
+New release '22.04.2 LTS' available.
+Run 'do-release-upgrade' to upgrade to it.
+
+
+Last login: Thu Jul 27 02:12:12 2023
+]0;klapertart@klapertartcomp: ~[01;32mklapertart@klapertartcomp[00m:[01;34m~[00m$ pwd
+/home/klapertart
+]0;klapertart@klapertartcomp: ~[01;32mklapertart@klapertartcomp[00m:[01;34m~[00m$ spawn ssh 192.168.8.75
+The authenticity of host '192.168.8.75 (192.168.8.75)' can't be established.
+ED25519 key fingerprint is SHA256:kQLHuQlTG9p8jvB8jwK0+D+kCbbaj51BCFmHkPPn9kk.
+This host key is known by the following other names/addresses:
+    ~/.ssh/known_hosts:9: [hashed name]
+    ~/.ssh/known_hosts:11: [hashed name]
+    ~/.ssh/known_hosts:12: [hashed name]
+    ~/.ssh/known_hosts:13: [hashed name]
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added '192.168.8.75' (ED25519) to the list of known hosts.
+root@192.168.8.75's password: 
+Last login: Thu Jul 27 08:59:25 2023
+]0;root@localhost:~[?1034h[root@localhost ~]# pwd
+/root
+]0;root@localhost:~[root@localhost ~]# spawn ssh root@192.168.8.72
+ssh: connect to host 192.168.8.72 port 22: No route to host
+expect: spawn id exp5 not open
+    while executing
+"expect eof"
+    ("foreach" body line 36)
+    invoked from within
+"foreach {remote} [array get remote_array] {
+
+	log_file -a ssh-multiserver.log
+
+	spawn ssh $remote
+
+	expect {
+		timeout {
+			return FAIL
+		}
+		"Are you..."
+    (file "./ssh-check.sh" line 14)
+spawn ssh root@192.168.8.72
+ssh: connect to host 192.168.8.72 port 22: No route to host
+expect: spawn id exp5 not open
+    while executing
+"expect eof"
+    ("foreach" body line 36)
+    invoked from within
+"foreach {remote} [array get remote_array] {
+
+	log_file -a ssh-multiserver.log
+
+	spawn ssh $remote
+
+	expect {
+		timeout {
+			puts "$remote : No route t..."
+    (file "./ssh-check.sh" line 14)
